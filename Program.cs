@@ -33,7 +33,7 @@ namespace FNFCoverManager
         static void Main()
         {
             // Load the JSON config
-            string configPath = @"C:\Users\bucki\Downloads\tempstuff\fnfcovermanager_config.json";
+            string configPath = @"fnfcovermanager_config.json";
             Config config = LoadConfig(configPath);
 
             // To customize application configuration such as set high DPI settings or default font,
