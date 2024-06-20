@@ -1,0 +1,15 @@
+{
+  "SongDirs": [
+    {
+      "Name": "good-song",
+      "Path": "C:\\YourFNFMod\\assets\\songs\\good-song"
+    }
+  ],
+  "CoverDirs": [
+    {
+      "SongName": "good-song",
+	    "CoverName": "Original Audio",
+      "Path": "C:\\covers\\good-song\\Original Audio.ogg"
+    }
+  ]
+}
