@@ -3,6 +3,8 @@ This software is currently developed.
 
 ---
 
+<img src="https://github.com/JohnB17/FNFCoverManager/assets/63297273/acf4c337-5074-4573-82a7-ab482e6a98a3" alt="drawing" width="250"/>
+
 # Friday Night Funkin Cover Manager
 A way to manage all of the covers for your FNF songs
 
