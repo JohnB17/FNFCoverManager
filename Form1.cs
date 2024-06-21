@@ -35,11 +35,12 @@ namespace FNFCoverManager
             }
             return null; // Song not found
         }
-        private string GetCoverPath(string coverName)
+        private string GetCoverPath(string songName, string coverName)
         {
             foreach (var coverDir in _config.CoverDirs)
             {
-                if (coverDir.CoverName.Equals(coverName, StringComparison.OrdinalIgnoreCase))
+                if (coverDir.SongName.Equals(songName, StringComparison.OrdinalIgnoreCase) &&
+                    coverDir.CoverName.Equals(coverName, StringComparison.OrdinalIgnoreCase))
                 {
                     return coverDir.Path;
                 }
@@ -148,7 +149,7 @@ namespace FNFCoverManager
             String currentCoverHash = GetFileHash($"{currentSongPath}\\Voices.ogg");
 
             String newCoverName = coversBox.SelectedItem.ToString();
-            String coverPath = GetCoverPath(newCoverName);
+            String coverPath = GetCoverPath(currentSongName, newCoverName);
             String newCoverHash = GetFileHash(coverPath);
 
             if (currentCoverHash == newCoverHash)
@@ -170,6 +171,7 @@ namespace FNFCoverManager
                 {
                     // Copy the file
                     File.Copy(coverPath, destinationFilePath, true); // Set overwrite to true to allow overwriting if the file exists
+                    //errorBox.Text =$"[{GetDebugTime()}] File Path = {coverPath} Destination = {destinationFilePath}\n{errorBox.Text}";
                     //MessageBox.Show("File copied successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     currentCover.Text = $"Current Cover: {newCoverName}";
                 }

@@ -94,10 +94,10 @@
             // currentSong
             // 
             currentSong.AutoSize = true;
-            currentSong.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            currentSong.Location = new Point(12, 171);
+            currentSong.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            currentSong.Location = new Point(12, 151);
             currentSong.Name = "currentSong";
-            currentSong.Size = new Size(78, 21);
+            currentSong.Size = new Size(93, 25);
             currentSong.TabIndex = 8;
             currentSong.Text = "Song: ???";
             // 
@@ -105,7 +105,7 @@
             // 
             currentCover.AutoSize = true;
             currentCover.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            currentCover.Location = new Point(205, 171);
+            currentCover.Location = new Point(12, 176);
             currentCover.Name = "currentCover";
             currentCover.Size = new Size(145, 21);
             currentCover.TabIndex = 9;
@@ -154,9 +154,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(12, 10);
             label5.Name = "label5";
-            label5.Size = new Size(183, 15);
+            label5.Size = new Size(207, 15);
             label5.TabIndex = 14;
-            label5.Text = "FNF Cover Manager by JohnBDev";
+            label5.Text = "FNF Cover Manager v1.1 by JohnBDev";
             // 
             // linkLabel1
             // 
