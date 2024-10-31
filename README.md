@@ -7,6 +7,8 @@ This software is currently developed.
 
 # Friday Night Funkin Cover Manager
 A way to manage all of the covers for your FNF songs
+
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P614N5YG)
 
 ## How to add songs and covers
